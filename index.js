@@ -12,7 +12,7 @@ const io = require("socket.io")(http, {
   });
 
 
-http.listen(3001, () => {
+http.listen(3400, () => {
     console.log('server is now listening at port 3300');
     console.log('http://localhost:3300/getusers');
   });
