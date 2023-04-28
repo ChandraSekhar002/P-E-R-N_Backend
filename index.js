@@ -5,14 +5,14 @@ const cors = require('cors');
 const http = require('http').createServer(app);
 const io = require("socket.io")(http, {
     cors: {
-      origin: "http://localhost:3001",
-      //origin: "*",
+      //origin: "http://localhost:3001",
+      origin: "*",
       methods: ["GET", "POST"]
     }
   });
 
 
-http.listen(3300, () => {
+http.listen(3001, () => {
     console.log('server is now listening at port 3300');
     console.log('http://localhost:3300/getusers');
   });
